@@ -67,7 +67,7 @@ html::-webkit-scrollbar{
     width: 100%;
     background-position: center;
     background-size: cover;
-    background-image: url("/res/bike1.webp");
+    background-image: url("./res/bike1.webp");
     background-repeat: no-repeat;
 
 }
