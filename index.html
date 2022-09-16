@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- icon -->
+        <link rel="shortcut icon" href="res/favicon.png" type="image/x-icon">
+        <!-- AOS Animation  -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>ABC Automobile</title>
+</head>
+
+<body>
+
+
+    <!--TODO: Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light  sticky-top">
+        <a class="navbar-brand ml-2 d-flex justify-content-center" href="index.html"> <img src="res/logo.png"
+                class="brandLogo" alt="logo"></a>
+        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="my-nav" class="collapse navbar-collapse ">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#Home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#AboutUs">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Products.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <!-- navbar -->
+
+    <!-- TODO: Hero Section -->
+    <div id="Home" class="container-fluid hero-bg ">
+        <div class=" row p-4 col-sm-12 col-md-6 col-xl-6 ">
+            <p class="hero-heading h2 mb-5 pl-5 pr-5 " data-aos="fade-right" data-aos-duration="1000">Explore Our Range Of SCOOTERS & BIKES</p>
+            <button class=" btn-enquiry ml-5" data-toggle="modal" data-target="#my-modal" data-aos="fade-up" data-aos-duration="1000">Enquire Now</button>
+        </div>
+        <!-- <div class="col-sm-12 col-md-6 col-xl-6"></div> -->
+    </div>r
+    <!-- TODO: Hero Section -->
+
+    <!-- TODO:Enquire modal -->
+    <div id="my-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="my-modal-title"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="my-modal-title">ABC Automobile</h5>
+                    <button class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form name="myForm" action="#" class="form-group p-5">
+                        <h3 class="text-center">Send a Enquiry</h3>
+                        <input type="text" id="name" name="name" placeholder="Your Name*" class="form-control col-sm- mb-2"
+                            required>
+                        <input type="tel" id="phone" name="ph-number" placeholder="Phone Number" minlength="10" maxlength="10"
+                            class="form-control col-sm-12 mb-2">
+        
+                        <input type="email" id="email" name="email" placeholder="Your email*" required
+                            class="form-control col-sm-12 mb-2">
+        
+                        <textarea name="message" id="message" placeholder="Message"
+                            class="form-control col-sm-12 mb-2"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-outline btn-md contact-btn text-white" onclick="">Send Enquiry
+                        <i class=   "fa fa-arrow-right"></i>
+                    </button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <!-- <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- TODO:Enquire modal -->
+
+
+    <!-- TODO: FEATURED PRODUCTS -->
+    <div class="container">
+        <p class="text-center mt-2 sec-title">FEATURED PRODUCTS</p>
+
+        <div class="row">
+
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-3 featured-products-items" data-aos="fade-up" data-aos-duration="1000">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-img">
+                            <img src="/res/burgman.webp" alt="Suzuki Burgman" class="img-fluid">
+                        </div>
+                        <p class="text-center mt-3 font-weight-bold h4">Suzuki Burgman</p>
+                    </div>
+                    <div class="card-item-content">
+                        <a href="#">Take A Test Drive</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-3 featured-products-items" data-aos="fade-up" data-aos-duration="1000">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-img">
+                            <img src="/res/Honda-Activa-125-Premium-Edition-Price.jpg" alt="Suzuki Burgman"
+                                class="img-fluid ml-5" width="230px">
+                        </div>
+                        <p class="text-center mt-3 font-weight-bold h4">Honda Activa</p>
+                    </div>
+                    <div class="card-item-content">
+                        <a href="#">Take A Test Drive</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-3 featured-products-items" data-aos="fade-up" data-aos-duration="1000">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-img">
+                            <img src="/res/hero.jpg" alt="Suzuki Burgman" class="img-fluid ml-5" width="260px">
+                        </div>
+                        <p class="text-center mt-3 font-weight-bold h4">Hero Xtreme</p>
+                    </div>
+                    <div class="card-item-content">
+                        <a href="#">Take A Test Drive</a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="Products.html" class="show-more">show More products <i class="fa fa-arrow-right"></i></a>
+
+        </div>
+    </div>
+    </div>
+    <!-- TODO: FEATURED PRODUCTS -->
+
+
+    <!-- TODO: About Us -->
+    <div id="AboutUs" class="container-fluid mt-2">
+        <div class="row p-4">
+            <div class="col-md-6 col-xl-6 col-sm-12">
+                <p class="text-center mt-2 sec-title" >ABOUT US</p>
+                <p class="about-text text-center pt-5" data-aos="fade-right" data-aos-duration="2000">ABC AUTOMOBILES, Mumbai’s favorite multi-brand two-wheeler
+                    superstore based in Kalyan (West), offers the best in service, price and spot delivery. What is
+                    more, when you are ready for your next two-wheeler, we promise you an unmatchable buyback guarantee.
+                    Come to ABC AUTOMOBILES for all your two-wheeler needs because no other multi-brand two-wheeler
+                    superstore offers you the brands, the rates of Interest and the prices that we do in Mumbai.</p>
+            </div>
+            <div class="col-md-6 col-xl-6 col-sm-12 div-about-img" data-aos="fade-left" data-aos-duration="1000">>
+                <img src="/res/about-us-bike.png" class="img-fluid about-img" alt="Scooter Image" 
+            </div>
+        </div>
+    </div>
+    <!-- TODO: About Us -->
+
+    <!-- TODO: testimonials -->
+    <!-- <div class="container-fluid">
+        <p class="text-center mt-2 sec-title">Testimonials</p>
+    </div> -->
+    <!-- TODO: testimonials -->
+
+
+
+
+
+    <!-- TODO: Footer -->
+    <div class="container-fluid bg-dark text-light ">
+        <div class="container p-5">
+            <div class="row d-flex justify-content-between">
+                <div class=" d-flex flex-column footer-link">
+                    <a href="index.html">Home</a>
+                    <a href="Products.html">Products</a>
+                    <a href="Services.html">Services</a>
+                    <a href="Contact.html">Contact</a>
+                </div>
+                <div class=""">
+                    <p class=" font-weight-bold text-center">CONTACT</p>
+
+                    <p class="text-center">12345, Fifth Lane, Short Road, Mumbai 12345</p>
+                    <p class="text-center"> Sales.abc@gmail.com </p>
+
+                </div>
+                <div class="">
+                    <p class="font-weight-bold">CONNECT</p>
+
+                    <div class="social-btn">
+                        <a href="" class="text-white m-2">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="" class="text-white m-2">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="" class="text-white m-2">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="" class="text-white m-2">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+        <!-- Copyright -->
+        <div class="text-center p-3" >
+            © 2022 Copyright :
+            <a class="text-white" href="index.html"> <span class=""><img src="res/images/code.png" alt=""></span>ABC Automobile. </a>All Rights Reserved.
+           
+        </div>
+        <!-- Copyright -->
+    </div>
+    <!-- TODO: Footer -->
+    
+    <script>
+        AOS.init();
+      </script>
+
+</body>
+
+</html>
