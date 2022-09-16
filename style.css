@@ -62,7 +62,7 @@ html::-webkit-scrollbar{
     width: 100%;
 }
 .active{
-    color: var(--colour-yellow);
+    color: var(--colour-yellow) !important;
 }
 .hero-bg {
     height: 400px;
